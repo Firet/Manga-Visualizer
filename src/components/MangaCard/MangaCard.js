@@ -1,27 +1,23 @@
 import React from 'react';
 import Image from "next/image";
-import mangas from '@/app/constants/manga';
+import './MangaCard.css'
 
-export default function MangaCard() {
-    mangas;
+export default function MangaCard({ name, src, alt }) {
 
     return (
-        <div className="">
-            <ul >
-                {mangas.map(manga => (
-                    <li key={manga.id}>
-                        <p>{manga.name}</p>
-                        <Image
-                            src={manga.cover}
-                            alt={manga.alt}
-                            className="manga-cover"
-                            unoptimized
-                            width={176}
-                            height={224}
-                        />
-                    </li>
-                ))}
-            </ul>
+        <div className="manga-card-container">
+            <div>
+                <h1>Manga Card</h1>
+                <p className='manga-main-title'>{name}</p>
+                <Image
+                    src={src}
+                    alt={alt}
+                    className="manga-cover"
+                    unoptimized
+                    width={176}
+                    height={224}
+                />
+            </div>
         </div>
     );
 }
