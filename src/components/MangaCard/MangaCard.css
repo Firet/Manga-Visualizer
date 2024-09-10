@@ -2,16 +2,16 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 20px;
-	max-width: 1100px;
-	width: 500px;
+	margin: 10px;
+	border: 1px solid #ddd
 }
 
 .manga-main-title {
-	display: flex;
 	text-align: center;
-	font-size: 34px;
-	font-weight: 500;
-	margin-top: 60px;
-	height: 110px;
+	/* font-size: 1.7rem; */
+	/* min-height: 80px; */
+}
+
+.manga-cover {
+	margin-bottom: 20px;
 }
