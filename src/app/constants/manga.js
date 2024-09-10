@@ -50,7 +50,7 @@ const mangas = [
 	},
 	{
 		id: 7,
-		name: 'Capitain Tsubasa',
+		name: 'Captain Tsubasa',
 		alt: 'Tapa del manga',
 		description: 'Mi sueño siempre fue ganar el mundial',
 		cover: 'https://meo2.comick.pictures/3en7Q-s.jpg',
