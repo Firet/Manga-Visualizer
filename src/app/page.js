@@ -1,11 +1,12 @@
-import styles from "./page.module.css";
-import MangaCard from "@/components/MangaCard/MangaCard";
+import Header from '@/components/Header/header'
+import MangaCollection from "@/components/MangaCollection/MangaCollection";
+import "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <h1>Lista de Mangas</h1>
-      <MangaCard />
-    </div>
+    <>
+      <Header />
+      <MangaCollection />
+    </>
   );
 }
