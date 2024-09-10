@@ -10,6 +10,10 @@ function MangaDetails() {
     const mangaId = pathname.split('/')[2];
     const manga = mangas.find((manga) => manga.id === parseInt(mangaId));
 
+    if (!mangaId || isNaN(mangaId) || !manga) {
+        return <div>We could not find this manga</div>;
+    }
+
     return (
         <div>
             {/* <h1>MangaId {manga.mangaId}</h1> */}
