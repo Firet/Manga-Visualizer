@@ -3,7 +3,8 @@
 - The idea is to make it responsive to cell phones, laptops and tablets. 
 - The visual elements were tested in several browsers.
 - The next-theme library was used to add two themes, dark and light. It can be switched with a small button on the home page.
-- The next js router was used to create dynamic routes. 
+- The next js router was used to create dynamic routes.
+- Installed a ran prettier to make code consistent throughout the app.
 
 
 ## 🈸 Getting Started
