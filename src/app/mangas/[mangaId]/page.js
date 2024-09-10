@@ -2,11 +2,12 @@
 
 import { usePathname } from 'next/navigation'
 import mangas from '@/app/constants/manga';
-
+import Image from "next/image";
+import './MangaDetails.css';
 
 function MangaDetails() {
 
-    const pathname = usePathname()
+    const pathname = usePathname();
     const mangaId = pathname.split('/')[2];
     const manga = mangas.find((manga) => manga.id === parseInt(mangaId));
 
@@ -15,9 +16,17 @@ function MangaDetails() {
     }
 
     return (
-        <div>
-            {/* <h1>MangaId {manga.mangaId}</h1> */}
-            <h1>Titulo: {manga.name}</h1>
+        <div className="manga-details-container">
+            <h1>{manga.name}</h1>
+            <Image
+                src={manga.cover}
+                alt={manga.alt}
+                className="manga-cover"
+                unoptimized
+                width={300}
+                height={500}
+            />
+            <p>{manga.description}</p>
         </div>
     );
 }
