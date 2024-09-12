@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import mangas from '@/app/constants/manga';
 import Image from 'next/image';
 import './MangaDetails.css';
+import PageDisplayer from '@/components/PageDisplayer/PageDisplayer';
 
 function MangaDetails() {
 	const pathname = usePathname();
@@ -26,6 +27,8 @@ function MangaDetails() {
 				height={500}
 			/>
 			<p>{manga.description}</p>
+
+			<PageDisplayer />
 		</div>
 	);
 }
