@@ -22,6 +22,7 @@ export default function MangaCard({ mangaId, name, src, alt }) {
 				width={176}
 				height={224}
 			/>
+			<button className="readme-button">Read</button>
 		</div>
 	);
 }

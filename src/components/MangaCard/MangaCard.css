@@ -15,3 +15,12 @@
 .manga-cover {
 	margin-bottom: 20px;
 }
+
+.readme-button {
+	margin-bottom: 10px;
+	background-color: rgb(125, 125, 235);
+	color: white;
+	width: 82%;
+	font-weight: 600;
+	border: unset;
+}
