@@ -1,6 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import './Scene.css';
 import { useGLTF } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 
 export default function MyScene() {
   const { nodes, materials } = useGLTF('/tankobon.gltf');
@@ -18,6 +19,7 @@ export default function MyScene() {
             geometry={nodes.Cube.geometry}
             material={materials.Material}
           />
+          <OrbitControls />
         </Canvas>
       </div>
     </>
