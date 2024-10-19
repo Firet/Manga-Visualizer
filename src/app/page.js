@@ -8,9 +8,9 @@ import './page.module.css';
 export default function Home() {
 	return (
 		<ThemeProvider>
+			<MyScene />
 			<Header />
 			<MangaCollection />
-			{/* <MyScene /> */}
 		</ThemeProvider>
 	);
 }

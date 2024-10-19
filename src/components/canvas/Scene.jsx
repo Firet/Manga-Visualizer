@@ -1,16 +1,21 @@
 import { Canvas } from '@react-three/fiber';
-// import { OrbitControls } from '@react-three/drei';
+import './Scene.css';
+import { useGLTF } from '@react-three/drei';
 
 export default function MyScene() {
+  const { nodes, materials } = useGLTF('/tankobon.gltf');
   return (
-    <Canvas>
-      <ambientLight intensity={0.5} />
-      <pointLight position={[10, 15, 10]} />
-      <mesh>
-        <boxGeometry />
-        <meshStandardMaterial color="hotpink" />
-      </mesh>
-      {/* <OrbitControls /> */}
-    </Canvas>
+    <>
+      <div className="scene">
+        <Canvas className="canvas" shadows camera={{
+          position: [-6, 7, 7]
+        }}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cube.geometry} />
+        </Canvas>
+      </div>
+    </>
   );
 }
